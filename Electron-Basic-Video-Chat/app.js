@@ -1,9 +1,15 @@
 const electron = require('electron');
 
-electron.ipcMain.handle(
+// this correctly logs the screens available
+// console.log('trying it now...', electron.desktopCapturer.getSources({
+//   types: ['screen']
+// }).then(sources => console.log(sources)));
+
+console.log(electron.ipcMain.handle(
   'DESKTOP_CAPTURER_GET_SOURCES',
   (event, opts) => electron.desktopCapturer.getSources(opts)
-);
+));
+
 
 // Module to control application life.
 const app = electron.app;
@@ -27,7 +33,7 @@ const createWindow = () => {
       // nodeIntegration: true,
       // contextIsolation: false,
       // Comment the next line in case you want to set contextIsolation in 'false'
-      preload: path.join(__dirname, 'preload.js'), // use a preload script
+      preload: path.join(__dirname, 'preload.js') // use a preload script
     }
   });
 
