@@ -5,10 +5,10 @@ const electron = require('electron');
 //   types: ['screen']
 // }).then(sources => console.log(sources)));
 
-console.log(electron.ipcMain.handle(
+electron.ipcMain.handle(
   'DESKTOP_CAPTURER_GET_SOURCES',
   (event, opts) => electron.desktopCapturer.getSources(opts)
-));
+);
 
 
 // Module to control application life.
