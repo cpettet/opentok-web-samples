@@ -1,13 +1,5 @@
 const electron = require('electron');
 
-// Event emitter to handle messages sent from the renderer process. This handler
-// will be called whenever a renderer calls
-// ipcRenderer.invoke('DESKTOP_CAPTURER_GET_SOURCES', ...args)
-electron.ipcMain.handle(
-  'DESKTOP_CAPTURER_GET_SOURCES',
-  (event, opts) => electron.desktopCapturer.getSources(opts)
-);
-
 // Module to control application life.
 const app = electron.app;
 // Module to create native browser window.
@@ -24,10 +16,7 @@ const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800,
-    height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js') // use a preload script
-    }
+    height: 600
   });
 
   // and load the index.html of the app.
