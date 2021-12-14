@@ -3,6 +3,7 @@ const apiKey = '';
 const sessionId = '';
 const token = '';
 
+
 if (!apiKey || !sessionId || !token) {
   alert('You need to add your apiKey, sessionId and token to openTok.js');
 }

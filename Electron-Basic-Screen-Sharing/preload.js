@@ -1,6 +1,6 @@
 const {
-  desktopCapturer,
-  contextBridge
+  contextBridge,
+  desktopCapturer
 } = require('electron');
 
 // Expose desktopCapturer so that the SDK can access it
