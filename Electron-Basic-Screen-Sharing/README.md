@@ -166,9 +166,9 @@ The `session.subscribe()` method takes four parameters:
 `$ yarn start`
 
 ## Electron Screen-Sharing Example Applications
-* [Electron 01-04](https://github.com/opentok/opentok-web-samples/tree/Electron-SS-V01-to-V04/Electron-Basic-Screen-Sharing/README.md) *<span style="color:red">legacy</span>*
-* [Electron 05-11](https://github.com/opentok/opentok-web-samples/tree/Electron-SS-V05-to-V11/Electron-Basic-Screen-Sharing/README.md) *<span style="color:red">legacy</span>*
-* [Electron 12-16](https://github.com/opentok/opentok-web-samples/tree/Electron-SS-V12-to-V16/Electron-Basic-Screen-Sharing/README.md) *<span style="color:green">current release</span>*
+* [Electron 01-04](https://github.com/cpettet/opentok-web-samples/tree/Electron-SS-V01-to-V04/Electron-Basic-Screen-Sharing/README.md) *<span style="color:red">legacy</span>*
+* [Electron 05-11](https://github.com/cpettet/opentok-web-samples/tree/Electron-SS-V05-to-V11/Electron-Basic-Screen-Sharing/README.md) *<span style="color:red">legacy</span>*
+* [Electron 12-16](https://github.com/cpettet/opentok-web-samples/tree/Electron-SS-V12-to-V16/Electron-Basic-Screen-Sharing/README.md) *<span style="color:green">current release</span>*
 * [Electron 17](https://github.com/opentok/opentok-web-samples/tree/main/Electron-Basic-Screen-Sharing/README.md) *<span style="color:green">future release</span>*
 
 ## Known Issues
