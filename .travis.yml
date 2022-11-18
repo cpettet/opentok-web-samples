@@ -21,7 +21,7 @@ matrix:
     - os: linux
       env: INTEGRATION_CMD='npm run lint'
     - os: linux
-      env: INTEGRATION_CMD='./deploy.sh'
+      env: BROWSER=chrome BVER=stable INTEGRATION_CMD='./deploy.sh'
 
 env:
   global:
