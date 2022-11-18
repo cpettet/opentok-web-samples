@@ -20,6 +20,8 @@ matrix:
   include:
     - os: linux
       env: INTEGRATION_CMD='npm run lint'
+    - os: linux
+      env: INTEGRATION_CMD='./deploy.sh'
 
 env:
   global:
